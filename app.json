@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Reportes Mantenimiento Escolar",
+    "slug": "reportes-mantenimiento-escolar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Permite tomar fotografías para documentar reportes de mantenimiento.",
+          "photosPermission": "Permite seleccionar fotografías para documentar reportes de mantenimiento.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite adjuntar la ubicación al reporte de mantenimiento mientras usas la app."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#123B56"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.utvt.reportesmantenimiento",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#123B56"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "aea44f8e-ad35-4117-9f9b-007d7193b595"
+      }
+    },
+    "owner": "francisco1234p"
+  }
+}
